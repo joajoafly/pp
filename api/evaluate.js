@@ -16,7 +16,7 @@ export default async function handler(req, res) {
         return res.status(500).json({ error: '서버에 API 키가 설정되지 않았습니다.' });
     }
 
-    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
+    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview:generateContent?key=${apiKey}`;
 
     const systemInstruction = `
 당신은 AI 앱 개발 강사 및 프롬프트 엔지니어링 전문가입니다.
